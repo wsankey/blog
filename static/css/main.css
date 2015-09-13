@@ -32,3 +32,8 @@ a {
 #list {
 	font-size: 20px;
 }
+
+@media screen and (max-width: 30em) {
+  #canvas2 { display: none; 
+}
+}

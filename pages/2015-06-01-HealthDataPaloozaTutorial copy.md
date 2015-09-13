@@ -38,7 +38,6 @@ df = pd.read_csv("PartD_Prescriber_PUF_NPI_DRUG_Aa_AL_CY2013.csv", nrows=100)
 print df.head(10)
 </code></pre>In running this code we'll be able to get a sense of this dataset, the variable names and what we'll need to do to transform it into something we can use. 
 
-<img  class="parent" src="{{ url_for('static',  filename='media/investigate.png', width=100 )}}">
 
 From this investigation we find some key variables: the prescriber's NPI (a unique identifier), their first and last name along with their city and state, the drug's total cost, and the name of the generic drugs. 
 

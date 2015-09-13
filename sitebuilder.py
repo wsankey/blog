@@ -19,11 +19,11 @@ app.config['FLATPAGES_HTML_RENDERER'] = prerender_jinja
 def index():
 	return render_template('index.html')
 
-@app.route("/aboutme")
+@app.route("/aboutme/")
 def aboutme():
 	return render_template('aboutme.html')
 
-@app.route("/projects")
+@app.route("/projects/")
 def projects():
 	return render_template('projects.html')
 
@@ -36,9 +36,6 @@ def blog():
 
 @app.route('/tag/<string:tag>/')
 def tag(tag):
-	if tag == "FivePy":
-		return redirect(url_for('fivepy'))
-	else:
 		tagged = [p for p in pages if tag in p.meta.get('tags', [])]
 		return render_template('tag.html', pages=tagged, tag=tag)
 

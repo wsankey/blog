@@ -57,16 +57,16 @@ The libraries being used:
 
 Create an empty repository, install those libraries, and then
 
-{% highlight python %} 
+
 pip freeze 
-{% endhighlight %}
+
 
 the dependencies 
 
 The python code for the older style of application:
 
 
-{% highlight python %} 
+
 import redis
 from flask import Flask, render_template
 
@@ -81,7 +81,7 @@ def main():
 if __name__ == "__main__":
   app.run(debug=True)
 
-{% endhighlight %}
+
 
 
 And then we code custom to render our python script (*[from here on out
