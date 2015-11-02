@@ -46,7 +46,10 @@ def page(path):
 
 @app.route('/fivepy/')
 def fivepy():
-	posts = [p for p in pages if p.meta['tags'] == ['FivePy']]
+	articles = (p for p in pages if "date" in p.meta)
+	latest = sorted(articles, reverse=True, 
+							key=lambda p: p.meta['date'])
+	posts = [p for p in latest if p.meta['tags'] == ['FivePy']]
 	return render_template('fivepy.html', pages=posts)
 
 if __name__ == '__main__':
