@@ -5,47 +5,16 @@ tags: [FivePy]
 podcast: FivePy
 description: Thinking about mutability
 
+From Google, the arbiter of all knowledge:<br>
+<em>Mutability means the quality of being changeable. Caterpillars, on their way to becoming butterflies, display a great deal of mutability. An easy way to remember mutability is to think about a word it sounds like, mutant. A mutant is someone who has been changed, irrevocably, so mutability is the ability to change.</em>
 
-In python, every object has an identity, a type and a value. An object’s identity never changes once it has been created. It is the object’s address in memory. The ‘is’ operator compares the identity of two objects
+Let's lay some groundwork for thinking about mutability. In python, every object has an identity, a type and a value. An object’s identity never changes once it has been created. It is the object’s address in memory. The ‘is’ operator compares the identity of two objects and can help us think through mutability and what it means to be unchanging.
 
-x=2
-y=4
-x is y
-id(x)
-id(y)
-x=4
-x is y
-id(x)
-id(y)
+<img class="parent" src="{{ url_for('static', filename='media/mutability1.png') }}">
 
-The id() function returns the address in memory where the object is stored. Objects whose values can change are mutable, objects whose values cannot change are immutable. In the example on the website where I demonstrate is() and id() you see that the integers themselves, the data types, are immutable objects. An object’s mutability is determined by its type -- numbers, strings, and tuples are immutable while dictionaries and lists are mutable. And for this reason it’s often not recommended to use mutable data types as default arguments -- for example if you use an array as a function input and rerun that function several times you’ll see the error of your ways. And there is an example on the blog. 
+The id() function returns the address in memory where the object is stored. Objects whose values can change are mutable, objects whose values cannot change are immutable. In the example on the website where I demonstrate is() and id() you see that the integers themselves, the data types, are immutable objects. An object’s mutability is determined by its type -- numbers, strings, and tuples are immutable while dictionaries and lists are mutable. And for this reason it’s often not recommended to use mutable data types as default arguments -- for example if you use an array as a function input and rerun that function several times you’ll see the error of your ways. 
 
-def wrongheaded( arg = [] ):
-    arg.append( 1. )
-    return arg
+<img class="parent" src="{{ url_for('static', filename='media/mutability2.png') }}">
 
-wrongheaded()
-wrongheaded()
-wrongheaded()
-
-Further, objects are never explicitly destroyed, however when they become unreachable they may be garbage-collected. More on that another time. Ok, so now let’s look at a mutable object, the 
-array A of [1,2,3]
-a = [1,2,3]
-b = a
-a[0] = 4 
-print a
-print b
-a is b
-
-
-So b changed because the underlying object changed. The object is mutable. Here a and b are referencing the same object. There are ways for us to retain the same items in the array as a but create a new object so that when a changes b does not change as well
-
-a = [1,2,3]
-b = list(a)
-c = a
-
-a[0] = 4
-print a
-print b
-print c
+However mutability, like fire, isn't always dangerous and can be leveraged for beneficial purposes. The example [here] on CodeHabitude demonstrates an instance where knowing a little bit about mutability goes a long way towards improving the efficiency of the task. 
 
