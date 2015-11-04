@@ -5,6 +5,9 @@ tags: [FivePy]
 podcast: FivePy
 description: Thinking about mutability
 
+<object type="application/x-shockwave-flash" data="https://huffduffer.com/flash/player.swf?soundFile=http://traffic.libsyn.com/fivepy/FivePy_-_Mutability_3.mp3" width="290" height="24"><param name="movie" value="https://huffduffer.com/flash/player.swf?soundFile=http://traffic.libsyn.com/fivepy/FivePy_-_Mutability_3.mp3" /><param name="wmode" value="transparent" /><audio src="http://traffic.libsyn.com/fivepy/FivePy_-_Mutability_3.mp3" controls preload="none"><a href="https://huffduffer.com/wsankey/275744">Mutability on Huffduffer</a></audio></object>
+
+
 From Google, the arbiter of all knowledge:<br>
 <em>Mutability means the quality of being changeable. Caterpillars, on their way to becoming butterflies, display a great deal of mutability. An easy way to remember mutability is to think about a word it sounds like, mutant. A mutant is someone who has been changed, irrevocably, so mutability is the ability to change.</em>
 
