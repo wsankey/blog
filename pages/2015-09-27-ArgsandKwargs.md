@@ -30,4 +30,4 @@ halloween('snickers', 'm&ms', sprite=1)
 
 [This Reddit thread has a great discussion on arguments vs. keyword arguments][1]
 
-[1]: http://interactivepython.org/courselib/static/pythonds/SortSearch/TheInsertionSort.html
+[1]: https://www.reddit.com/r/Python/comments/1jp1kv/args_and_kwargs_in_python_explained/

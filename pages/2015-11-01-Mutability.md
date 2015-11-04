@@ -19,5 +19,6 @@ The id() function returns the address in memory where the object is stored. Obje
 
 <img class="parent" src="{{ url_for('static', filename='media/mutability2.png') }}">
 
-However mutability, like fire, isn't always dangerous and can be leveraged for beneficial purposes. The example [here] on CodeHabitude demonstrates an instance where knowing a little bit about mutability goes a long way towards improving the efficiency of the task. 
+However mutability, like fire, isn't always dangerous and can be leveraged for beneficial purposes. The example [here][1] on CodeHabitude demonstrates an instance where knowing a little bit about mutability goes a long way towards improving the efficiency of the task. 
 
+[1]: http://codehabitude.com/2013/12/24/python-objects-mutable-vs-immutable/
