@@ -1,0 +1,68 @@
+<!DOCtype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Will Sankey | Data and code</title>
+   <script src="//use.typekit.net/puo2mkm.js"></script>
+	<script>try{Typekit.load({ async: true });}catch(e){}</script>
+    <link rel=stylesheet type=text/css href="/static/css/bootstrap.min.css"/>
+    <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <link rel=stylesheet type=text/css href="/static/css/main.css"/>
+    <meta name="viewport" content="width=device-width">
+</head>
+<body>
+<div class="container">
+	<div class="row">
+		<div class="col-sm-12">
+  <h1><a class="brandcolor" href="/">Will Sankey</a>
+  <small>
+  <span class="namegroup">
+  <ul id="namelist">
+    <li id="list"><a class="brandcolor2" href="/aboutme/">[About,</a></li>
+    <li id="list"><a class="brandcolor2" href="/posts/">Blog,</a></li>
+    <li id="list"><a  class="brandcolor2"href="/projects/">Etc.]</a></h3></li>
+  </ul>
+  </span>
+  </small>
+  </h1>
+
+
+<div class="container">
+	<div class="row">
+		<div  class="col-xs-12 card" style="margin-bottom: 4em;">
+					<a href="/posts/"></a>
+			<h2>Bubble Sort</h2>
+			<p class="date">2015-09-18</p>
+			<p><object type="application/x-shockwave-flash" data="https://huffduffer.com/flash/player.swf?soundFile=http://traffic.libsyn.com/fivepy/FivePy_-_Bubble_Sort.mp3" width="290" height="24"><param name="movie" value="https://huffduffer.com/flash/player.swf?soundFile=http://traffic.libsyn.com/fivepy/FivePy_-_Bubble_Sort.mp3" /><param name="wmode" value="transparent" /><audio src="http://traffic.libsyn.com/fivepy/FivePy_-_Bubble_Sort.mp3" controls preload="none"><a href="https://huffduffer.com/wsankey/263428">Bubble Sort on Huffduffer</a></audio></object></p>
+<p><a href="http://interactivepython.org/runestone/static/pythonds/SortSearch/TheBubbleSort.html">Interactive Python has a great rundown on implementing the bubble sort algorithm in python</a></p>
+<pre><code class="language-python">
+def bubbleSort(alist):
+    for passnum in range(len(alist)-1,0,-1):
+        for i in range(passnum):
+            if alist[i]>alist[i+1]:
+                temp = alist[i]
+                alist[i] = alist[i+1]
+                alist[i+1] = temp
+</code></pre>
+
+<p><a href="http://interactivepython.org/runestone/static/pythonds/SortSearch/TheBubbleSort.html"><em>The source of this example.</em></a></p>
+		</div>
+	</div>
+</div>
+
+    </div>
+  </div>
+</div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-67546347-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>
