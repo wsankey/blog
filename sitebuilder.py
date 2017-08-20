@@ -57,6 +57,8 @@ def fivepy():
 
 if __name__ == '__main__':
     if len(sys.argv) > 1 and sys.argv[1] == "build":
+    	print "Building the site..."
         freezer.freeze()
+        print "Finished!"
     else:
         app.run(port=8000)
