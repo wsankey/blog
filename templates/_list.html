@@ -2,15 +2,18 @@
 {% for page in pages %}
 <div class="container" >
 	<div class="row">
-		<div class="col-sm-12" style="padding: 0 4em 1em 0;">
-			<span class="glyphicon glyphicon-star brandcolor"></span><strong><a href="{{ url_for("page", path=page.path) }}"> {{ page.title }}</a></strong><br>
-		<div id="datetag">
-		<span class="glyphicon glyphicon-star brandcolor"></span> Date: {{ page.date }}
+		<div class="col-sm-12" style="padding: 0 2em 1em 0;">
+			<a href="{{ url_for("page", path=page.path) }}"></h3>{{ page.title }}</h3></a>
+			<br>
+
+		<div class="brandcolor2" id="datetag">
+		<p> Date: {{ page.date }}
 	{% if page.meta.tags|length %}
-		| <span class="glyphicon glyphicon-star brandcolor"></span> Tagged:
+		|  Tagged:
 		{% for page_tag in page.meta.tags %}
 			<em><a href="{{ url_for("tag", tag=page_tag) }}">{{ page_tag }}</a></em>
 		{% endfor %}
+		</p>
 		</div>
 			</div>
 		</div>
