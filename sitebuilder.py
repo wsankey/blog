@@ -17,7 +17,10 @@ app.config['FLATPAGES_HTML_RENDERER'] = prerender_jinja
 
 @app.route("/")
 def index():
-	return render_template('index.html')
+	articles = (p for p in pages if "date" in p.meta)
+	latest = sorted(articles, reverse=True, 
+							key=lambda p: p.meta['date'])
+	return render_template('index.html', pages=latest)
 
 @app.route("/aboutme/")
 def aboutme():
