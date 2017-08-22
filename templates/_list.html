@@ -3,7 +3,7 @@
 <div class="container" >
 	<div class="row">
 		<div class="col-sm-12" style="padding: 0 2em 1em 0;">
-			<span></span></h3><a href="{{ url_for("page", path=page.path) }}"> {{ page.title }}</a></h3><br>
+			<span></span></h2><a style="font-size: 25px" href="{{ url_for("page", path=page.path) }}">{{ page.title }}</a></h2><br>
 
 		<div class="brandcolor2" id="datetag">
 		<p> Date: {{ page.date }}
@@ -13,6 +13,7 @@
 			<em><a href="{{ url_for("tag", tag=page_tag) }}">{{ page_tag }}</a></em>
 		{% endfor %}
 		</p>
+		{{ page.html|safe }}
 		</div>
 			</div>
 		</div>
