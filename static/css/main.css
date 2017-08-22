@@ -1,13 +1,15 @@
 *, *:before, *:after {
   box-sizing: border-box;
   font-family: "aktiv-grotesk";
-  font-size: 19px;
+  font-size: 17px;
+  font-color: #212121 ;
 }
 
 h1 a {
   font-family: "aktiv-grotesk" !important;
   font-size: 56px;
 }
+
 
 body {
    background: #DDDCC5;
@@ -64,8 +66,8 @@ ul#namelist {
 }
 
 h1 .namegroup a { display: inline-block; 
-  margin-left: 0;
-  padding-left: 0;
+  margin-left: 1em;
+  padding-left: 1em;
 }
 
 #milesaway {

@@ -38,7 +38,7 @@
 <div class="container" >
 	<div class="row">
 		<div class="col-sm-12" style="padding: 0 2em 1em 0;">
-			<span></span></h3><a href="/posts/2015-04-16-PyCon-Videos/"> Learning from Pycon2015</a></h3><br>
+			<span></span></h2><a style="font-size: 25px" href="/posts/2015-04-16-PyCon-Videos/">Learning from Pycon2015</a></h2><br>
 
 		<div class="brandcolor2" id="datetag">
 		<p> Date: 2015-04-16
@@ -48,6 +48,17 @@
 			<em><a href="/tag/python/">python</a></em>
 		
 		</p>
+		<p>The following is a short rundown of the PyCon2015 presentations I found most inspiring, in no particular order. Please add yours to the list if you have a favorite.</p>
+<h4><a href="https://www.youtube.com/channel/UCgxzjK6GuOHVKR_08TT4hJQ">You can find all of these videos on the YouTube channel here!</a></h4>
+<h3>Jacob Kaplan-Moss (@jacobian)</h3>
+<p><a href="https://www.youtube.com/watch?v=hIJdFxYlEKE"><strong>Keynote</strong></a></p>
+<p>I really enjoyed this keynote. Essentially Jacob is arguing for the need for more adequate programmers, people who know how to do their job, who come in and do it well and go home. The shortage in talent won't be solved by filling positions with 10x-ers. We need more people in the middle. </p>
+<h3>Sasha Laundy (@sashalaundy)</h3>
+<p><a href="https://www.youtube.com/watch?v=hY14Er6JX2"><strong>Your Brain's API: Giving and Getting Technical Help</strong></a></p>
+<p>This is a talk about asking for help, which is very difficult in any setting. It's a very approachable talk. Some tips include: 1. pay attention to culture and pick it deliberately; 2. ask early if you don't know; 3. project consfidence; 4. get feedback when your thing is 30% done. Finally, give some sense of what you've already done and your current understanding - it gives you a way into the conversation. </p>
+<h3>Geoff Gerrietts (@ggerrietts)</h3>
+<p><a href="https://www.youtube.com/watch?v=UAztOuO1ANQ"><strong>Performance by the Numbers: analyzing the performance of web applications</strong></a></p>
+<p>Geoff presents some common approaches to increasing performance. Approaches such as the 'Drunken Man,' 'The Hammer', and 'Root Cause' analysis. He also goes through several examples of programs for measuring performance of your site, it's a useful talk for a refernce on performance. </p>
 		</div>
 			</div>
 		</div>
@@ -57,7 +68,7 @@
 <div class="container" >
 	<div class="row">
 		<div class="col-sm-12" style="padding: 0 2em 1em 0;">
-			<span></span></h3><a href="/posts/2015-04-06-IncubatorWin/"> A win at the Incubator Pitch Fest</a></h3><br>
+			<span></span></h2><a style="font-size: 25px" href="/posts/2015-04-06-IncubatorWin/">A win at the Incubator Pitch Fest</a></h2><br>
 
 		<div class="brandcolor2" id="datetag">
 		<p> Date: 2015-04-06
@@ -71,6 +82,16 @@
 			<em><a href="/tag/flask/">flask</a></em>
 		
 		</p>
+		<p>For the past three months I've been working nights and weekends on a
+data product for the</p>
+<h3><a href="http://www.districtdatalabs.com/#!incubator/c185j">District Data Labs (DDL) Incubator Program</a></h3>
+<p><em>Which you should totally participate in if you're in the D.C. area and
+even marginally interested in data science.</em></p>
+<p>Well, this past weekend my team successfully pitched the winning data
+product. You can find the app below <a href="//dew.herokuapp.com">or live here</a>.</p>
+<iframe src="//dew.herokuapp.com" width="800px;" height="300px;"></iframe>
+
+<p>Winning is great, but applying programming and visualization techniques I've been learning - and working on meaningful a project - is where I find fulfillment.</p>
 		</div>
 			</div>
 		</div>
@@ -80,7 +101,7 @@
 <div class="container" >
 	<div class="row">
 		<div class="col-sm-12" style="padding: 0 2em 1em 0;">
-			<span></span></h3><a href="/posts/2015-06-01-HealthDataPaloozaTutorial%20copy/"> Finding top opioid prescribers in the U.S., an Open Data Science Tutorial</a></h3><br>
+			<span></span></h2><a style="font-size: 25px" href="/posts/2015-06-01-HealthDataPaloozaTutorial%20copy/">Finding top opioid prescribers in the U.S., an Open Data Science Tutorial</a></h2><br>
 
 		<div class="brandcolor2" id="datetag">
 		<p> Date: 2015-06-01
@@ -96,6 +117,76 @@
 			<em><a href="/tag/health%20data/">health data</a></em>
 		
 		</p>
+		<p><em>Scroll to the bottom of the page if you want to get right to the python code and totals for the first CSV of data.</em> </p>
+<h3>Background and Introduction</h3>
+<p>The <strong>Centers for Medicare and Medicaid Services (CMS)</strong> recently released a <a href="http://www.cms.gov/Research-Statistics-Data-and-Systems/Statistics-Trends-and-Reports/Medicare-Provider-Charge-Data/Part-D-Prescriber.html">massive dataset</a> on the Part D program containing
+data on drug amounts, their cost, how many beneficiaries and claims were involved
+and the <em>names</em> and locations of the physicians prescribing these medications.</p>
+<p>In the spirit of the open data movement, and in time for the <a href="http://healthdatapalooza.org/">2015 Health Data Palooza conference</a>, this tutorial series proposes to total and visualize these data. The <a href="https://github.com/wsankey/PartDAnalysis">code</a> will be made available for anyone to download and modify. This tutorial uses <em>free</em> open source software so you can replicate these findings even if you are using your wife's old macbook air over the weekend. </p>
+<h4>Open Data Science with Python</h4>
+<p>This tutorial uses Python and eventually Javascript. I will be going through this using a standard text editor and the resources available via the Mac terminal. I am using Python 2.7 along with the Pandas module (all free). If you have a PC you can follow along but the screens below will look different and the steps needed to get this running may take some effort to configure. </p>
+<p><strong>Note: These tutorials may be a struggle to someone new to Python, Javascript, and the web world generally. Proceed with caution, and see other
+resources for more help.</strong></p>
+<h3>Results first</h3>
+<p>By the end of this tutorial you'll be able to query the top N prescribers of opioids in 2013. Below I've pulled the top 5 by total drug cost (right screen0) from the first CSV, my code is on the left:
+<img class="parent" src="/static/media/top5_prescribers.png">
+<em>Bigger screenshots are provided below</em></p>
+<h3>Find, download and explore the data</h3>
+<p>For this first tutorial we'll total drug costs for one of the CSVs. Later we'll download and perform this operation over <em>all</em> the CSVs. Download the first workbook (Aa to AI) open and save it as a CSV. There are some ways to automate this using Python--and in the futre we'll attempt a script that completes this for us. </p>
+<h4>Understanding what we have</h4>
+<p>Let's take a breather, back up, and try and understand what we are looking at. After saving the data in our folder we can start writing some python scripts to look and manipulate it. </p>
+<p>In our python code we import the Pandas module and use it to look at the first ten observations. 
+<pre><code class="language-python">
+import pandas as pd</p>
+<h1>Let's read in the CSV and retain the columns we're interested in.</h1>
+<p>df = pd.read_csv("PartD_Prescriber_PUF_NPI_DRUG_Aa_AL_CY2013.csv", nrows=100)
+print df.head(10)
+</code></pre>In running this code we'll be able to get a sense of this dataset, the variable names and what we'll need to do to transform it into something we can use. </p>
+<p>From this investigation we find some key variables: the prescriber's NPI (a unique identifier), their first and last name along with their city and state, the drug's total cost, and the name of the generic drugs. </p>
+<h4>What drugs should we investigate. What are opioids?</h4>
+<p>We need a list of the generic drugs of interest. After some simple internet sleuthing we find this <a href="http://www.fda.gov/Drugs/DrugSafety/InformationbyDrugClass/ucm251735.htm">list of opioid generics from the FDA.</a> The opioid generics identified in this list include Fentanyl, Methadone Hydrochloride (HCL), Morphine Sulfate, and Oxymorphone HCL. </p>
+<h3>Finding totals by provider</h3>
+<p>In the interest of time I've provided below the final form of the code. Essentially, after reading our CSV into the Pandas module we identify the opioid generics of interest, we clean the total drug cost variable, and then we sum by the unique provider identifier (NPI). Once we have those totals we write that information to the 'top_prescribers_in_first_file' CSV. I've commented out the code below to offer some insight into what's happening at each step and please let me know in the comments if you'd like more information on anything going on below.
+<pre><code class="language-python">
+import pandas as pd</p>
+<h1>Let's read in the CSV and retain the columns we're interested in.</h1>
+<p>df = pd.read_csv("PartD_Prescriber_PUF_NPI_DRUG_Aa_AL_CY2013.csv")</p>
+<p>df = df[['npi', 'total_drug_cost', 'nppes_provider_last_org_name', 'nppes_provider_first_name', 'nppes_provider_city', 'nppes_provider_state', 'generic_name']]</p>
+<h1>We identify the following generics as opioids.</h1>
+<p>def opiods(series):
+    if series["generic_name"]=="FENTANYL":
+        return 1
+    elif series["generic_name"]=="METHADONE HCL":
+        return 1
+    elif series["generic_name"]=="MORPHINE SULFATE":
+        return 1
+    elif series["generic_name"]=="OXYMORPHONE HCL":
+        return 1
+    else:
+        return 0</p>
+<h1>The opioids function is applied and the opioids retained.</h1>
+<p>df['opioid_var'] = df.apply(opiods, axis=1)
+df = df.loc[(df.opioid_var==True)]</p>
+<h1>Our total drug cost column is messy and needs cleaning.</h1>
+<p>df['total_drug_cost'] = df['total_drug_cost'].fillna(0)
+df['total_drug_cost'] = df['total_drug_cost'].str.strip("$")
+df['total_drug_cost'] = df['total_drug_cost'].str.replace(',','')
+df['total_drug_cost'] = df['total_drug_cost'].astype(float)</p>
+<h1>Group and sum by provider NPI, sort the summed column in descending order and send our dataset to a CSV file.</h1>
+<p>df['tot'] = df['total_drug_cost'].groupby(df['npi']).transform('sum')
+df = df.drop_duplicates(cols='npi')</p>
+<p>top100 = df.sort('tot', ascending=False)[:100]
+top100 = top100[['npi', 'tot', 'nppes_provider_last_org_name', 'nppes_provider_first_name', 'nppes_provider_city', 'nppes_provider_state']]</p>
+<p>top100.to_csv('top_prescribers_in_first_file.csv')</p>
+<p></code></pre></p>
+<h3>Results</h3>
+<p>The output CSV returns the top 100 prescribers of opioids by total drug cost in 2013. We find the very top prescriber in this dataset prescriber $798,501 worth of opioids and the top 20 prescribers in this first file prescribed over $100,000 worth of opioids.</p>
+<p><img class="parent" src="/static/media/top100excel.png"></p>
+<p><em>Important note: There many be important factors about a prescriber's population (e.g. having more patients with cancer or in hospice) that are behind these totals. This basic analysis does not speak to any of those particular factors.</em> </p>
+<h3>Next steps</h3>
+<p>Ok, we've done this for one of our worksheets but we have more to do. The next tutorial will show you how to loop through the CSVs we have and save the top 100 prescribers from each. From there we'll use the mindset of the <a href="http://en.wikipedia.org/wiki/Merge_sort">mergesort alogrithmn</a> to find
+the top 100 prescribers of opioids in the country. Finally, in the last tutorial we'll take this data and visualize their totals. </p>
+<p>Stay tuned.</p>
 		</div>
 			</div>
 		</div>

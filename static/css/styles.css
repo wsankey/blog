@@ -1,7 +1,8 @@
 *, *:before, *:after {
   box-sizing: border-box;
   font-family: "aktiv-grotesk";
-  font-size: 19px;
+  font-size: 17px;
+  font-color: #212121 ;
 }
 
 h1 a {
