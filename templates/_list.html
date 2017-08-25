@@ -9,8 +9,9 @@
 				<p>Date: {{ page.date }}
 					{% if page.meta.tags|length %}|  Tagged:{% for page_tag in page.meta.tags %}<em><a href="{{ url_for("tag", tag=page_tag) }}">{{ page_tag }}</a></em>{% endfor %}
 				</p>
-				{{ page.html|safe }}
 				</div>
+				<div class="mainpagetext">{{ page.html|safe }}</div>
+
 			</div>
 		<div class="col-sm-2"></div>
 	</div>

@@ -14,6 +14,6 @@ Here are my thoughts after the experience:
 <li>1. Hard work still pays off</li></br>
 <li>2. It's easy to hire help for the supporting tasks in your personal venture</li></br>
 <li>3. Like the Alaskan wealthy, selling supplies may be more lucrative than panning for gold</li>
-</ol></br>
+</ol>
 
 And it's a great logo, no?
