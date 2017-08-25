@@ -2,22 +2,19 @@
 {% for page in pages %}
 <div class="container" >
 	<div class="row">
-		<div class="col-sm-12" style="padding: 0 2em 1em 0;">
-			<span></span></h2><a style="font-size: 25px" href="{{ url_for("page", path=page.path) }}">{{ page.title }}</a></h2><br>
-
-		<div class="brandcolor2" id="datetag">
-		<p> Date: {{ page.date }}
-	{% if page.meta.tags|length %}
-		|  Tagged:
-		{% for page_tag in page.meta.tags %}
-			<em><a href="{{ url_for("tag", tag=page_tag) }}">{{ page_tag }}</a></em>
-		{% endfor %}
-		</p>
-		{{ page.html|safe }}
-		</div>
+		<div class="col-sm-2"></div>
+			<div class="col-sm-8">
+				<h2><a style="font-size: 1em;" href="{{ url_for("page", path=page.path) }}">{{page.title}}</a></h2>
+				<div class="brandcolor2" id="datetag">
+				<p>Date: {{ page.date }}
+					{% if page.meta.tags|length %}|  Tagged:{% for page_tag in page.meta.tags %}<em><a href="{{ url_for("tag", tag=page_tag) }}">{{ page_tag }}</a></em>{% endfor %}
+				</p>
+				{{ page.html|safe }}
+				</div>
 			</div>
-		</div>
+		<div class="col-sm-2"></div>
 	</div>
+</div>
 	{% endif %}
 {% else %}
 	<p>No page.</p>
