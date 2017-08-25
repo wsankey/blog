@@ -1,8 +1,8 @@
 *, *:before, *:after {
   box-sizing: border-box;
-  font-family: "aktiv-grotesk";
-  font-size: 17px;
-  font-color: #212121 ;
+  font-family: "canela";
+  font-size: 1.5rem;
+  font-color: #292f33;
 }
 
 h1 a {
@@ -12,7 +12,8 @@ h1 a {
 
 
 body {
-   background: #DDDCC5;
+   background: #fdfdfd;
+   font-family: "arial";
 }
 
 .parent {
@@ -20,8 +21,8 @@ body {
   border: 1px solid #1D2326;
 }
  .card {
-  background: #DDDCC5;
-    padding: 10px;
+  background: #fdfdfd;
+    padding: 4px;
  }
 
   .card h2 {
@@ -32,7 +33,7 @@ body {
  .card .date {
   color:#1D2326;
   margin-top:10px;
-  font-size:14px;
+  font-size:12px;
 }
 
 
@@ -48,12 +49,13 @@ a {
   color: #1D2326;
 }
 .brandcolor {
-  color: #611427
+  color: #E28561;
 }
 
 .brandcolor2 {
-  color: #6A6A61;
+  color: #98475C;
 }
+
 
 #namelist a {
   font-size: 14px !important;
@@ -81,4 +83,9 @@ h1 .namegroup a { display: inline-block;
   #datetag { display: none !important;}
 }
 
+.mainpagetext {
+  font-size: 5em;
+  font-weight: 100;
+  font-color:  #292f33;
+}
 

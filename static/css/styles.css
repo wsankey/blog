@@ -1,8 +1,8 @@
 *, *:before, *:after {
   box-sizing: border-box;
-  font-family: "aktiv-grotesk";
-  font-size: 17px;
-  font-color: #212121 ;
+  font-family: "canela";
+  font-size: 1.5rem;
+  font-color: #292f33;
 }
 
 h1 a {
@@ -11,7 +11,9 @@ h1 a {
 }
 
 body {
-   background: #DDDCC5;
+
+   background: #fdfdfd;
+    font-family: "arial";
 }
 
 a {
@@ -23,10 +25,10 @@ a {
 
 .parent {
   width: 100%;
-  border: 1px solid #DDDCC5;
+  border: 1px solid #fdfdfd;
 }
  .card {
-  background: #DDDCC5;
+  background: #fdfdfd;
     padding: 10px;
  }
 
@@ -38,7 +40,7 @@ a {
  .card .date {
   color:#5C5750;
   margin-top:10px;
-  font-size:14px;
+  font-size:12px;
 }
 
 
@@ -83,4 +85,8 @@ h1 .namegroup a { display: inline-block;
   #datetag { display: none !important;}
 }
 
-
+.mainpagetext {
+  font-size: 5em;
+  font-weight: 100;
+  font-color:  #292f33;
+}
