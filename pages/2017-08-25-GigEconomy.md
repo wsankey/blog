@@ -7,7 +7,7 @@ I was excited to receive a new logo for my woodworking hobby today.
 
 <img class="parent" src="{{ url_for('static', filename='media/turnspit2.png') }}">
 
-I paid a less than $50 sum to a designer on fivver.com. This was in place of asking around for a recommendation, hiriing a family friend, or posting an ad in craigslist. I hired the designer on Tuesday, received the logo on Thursday, asked for two revisions <em>and that same day received the final version</em>.
+I paid a less than $50 sum to a designer on fivver. This was in place of asking around for a recommendation, hiring a family friend, or posting an ad in craigslist. I hired the designer on Tuesday, received the logo on Thursday, asked for two revisions <em>and that same day received the final version</em>.
 
 Here are my thoughts after the experience:
 <ol>
