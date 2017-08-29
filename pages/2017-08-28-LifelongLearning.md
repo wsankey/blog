@@ -9,7 +9,7 @@ The way to remain gainfully employed and to grow throughout your career is to co
 
 I'm lucky to work in a sector where learning resources are plentiful. Using pluralsight, coursera, udacity, codeschool, o'reilly, in-person conferences, meetup, and youtube I've cobbled together an education for myself in data science and software engineering that has paid off. I typically aim to spend 5% of my annual salary on continuing professional development. The blog you're reading now was built from these resources.
 
-More institutions need to embrace these new modes of learning. Institutions such as Georgia Tech and the University of Illinois offer master's degrees online. I find it odd some still require things like recommendation letters  but these modes of enrollment are changing. I doubt higher learning will operate the same way in the next ten years. By the time my yet-to-be-realized children reach college it'll look a lot different.
+More institutions need to embrace these new modes of learning. Institutions such as Georgia Tech and the University of Illinois offer master's degrees online. It's odd some still require things like recommendation letters  but these modes of enrollment are changing. I doubt higher learning will operate the same way in the next ten years. By the time my yet-to-be-realized children reach college it'll look a lot different.
 
 The institutions that will win the future are those that embrace new modes of learning. The same will be true for professionals across sectors.
 
