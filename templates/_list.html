@@ -4,7 +4,8 @@
 	<div class="row">
 		<div class="col-sm-2"></div>
 			<div class="col-sm-8">
-				<h2><a style="font-size: 1em; font-family:'aktiv-grotesk';"href="{{ url_for("page", path=page.path) }}">{{page.title}}</a></h2>
+				<h2><a style="font-size: 1em; font-family:'aktiv-grotesk';
+				border-top: thick double #611427;" href="{{ url_for("page", path=page.path) }}">{{page.title}}</a></h2>
 				<div class="brandcolor2" id="datetag">
 				<p>Date: {{ page.date }}
 					{% if page.meta.tags|length %}|  Tagged:{% for page_tag in page.meta.tags %}<em><a href="{{ url_for("tag", tag=page_tag) }}">{{ page_tag }}</a></em>{% endfor %}
