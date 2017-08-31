@@ -8,11 +8,27 @@
 				border-top: thick double #611427;" href="{{ url_for("page", path=page.path) }}">{{page.title}}</a></h2>
 				<div class="brandcolor2" id="datetag">
 				<p>Date: {{ page.date }}
-					{% if page.meta.tags|length %}|  Tagged:{% for page_tag in page.meta.tags %}<em><a href="{{ url_for("tag", tag=page_tag) }}">{{ page_tag }}</a></em>{% endfor %}
+					{% if page.meta.tags|length %}|  Tagged:{% for page_tag in page.meta.tags %}<em><a href="{{ url_for("tag", tag=page_tag) }}">{{ page_tag }}</a></em>
+					{% endfor %}
 				</p>
 				</div>
-				<div class="mainpagetext" style="overflow: hidden">{{ page.html|safe }}</div>
 
+				<div class="mainpagetext" style="overflow: hidden, border-bottom: thick double #611427;">{{ page.html|safe }}</div>
+				{% if loop.index == 2 %}
+				<div class="ad">
+					<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+					<ins class="adsbygoogle"
+					     style="display:block"
+					     data-ad-format="fluid"
+					     data-ad-layout="image-top"
+					     data-ad-layout-key="-8i+1v-dw+ee+gs"
+					     data-ad-client="ca-pub-1891842734562267"
+					     data-ad-slot="8961159876"></ins>
+					<script>
+					     (adsbygoogle = window.adsbygoogle || []).push({});
+					</script>
+				</div>
+			    {% endif %}
 			</div>
 		<div class="col-sm-2"></div>
 	</div>
