@@ -3,7 +3,7 @@
 <div class="container" >
 	<div class="row">
 		<div class="col-sm-2"></div>
-			<div class="col-sm-8">
+			<div class="col-sm-8" style="overflow: hidden">
 				<h2><a style="font-size: 1em; font-family:'aktiv-grotesk';
 				border-top: thick double #611427;" href="{{ url_for("page", path=page.path) }}">{{page.title}}</a></h2>
 				<div class="brandcolor2" id="datetag">
@@ -13,9 +13,8 @@
 				</p>
 				</div>
 
-				<div class="mainpagetext" style="overflow: hidden, border-bottom: thick double #611427;">{{ page.html|safe }}</div>
+				<div class="mainpagetext" style="overflow: hidden">{{ page.html|safe }}
 				{% if loop.index == 2 %}
-				<div class="ad" style="overflow: hidden">
 					<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 					<ins class="adsbygoogle"
 					     style="display:block"
@@ -27,8 +26,8 @@
 					<script>
 					     (adsbygoogle = window.adsbygoogle || []).push({});
 					</script>
-				</div>
 			    {% endif %}
+			    </div>
 			</div>
 		<div class="col-sm-2"></div>
 	</div>
